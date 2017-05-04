@@ -1,0 +1,334 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,lmargin=25pt,rmargin=25pt,bmargin=0.8cm,includefoot]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{marginnote}
+\usepackage{fwlw}
+\usepackage{librebaskerville}
+
+\pagestyle{NextWordFoot}
+\reversemarginpar
+\renewcommand*\marginfont{\footnotesize}
+
+\begin{document}
+
+\section{Introduction}
+
+\large{
+To all but the dinosaurs, meteors are quite cool. As part of a year-long
+project at Exeter Mathematics School, I have studied 6 different areas of radio
+meteor detection, with the aim of analysing variation and phenomena associated
+with this method of detection. Before I present these studies, we must consider
+what a meteor {\it is} and the mechanisms behind meteor detection.
+}
+
+\section{What is a meteor?}
+
+\large{
+The title of this talk is why meteors rock, but I must admit that I have lied
+to all of you: only half of meteors rock. The other half are metallic in
+composition. It was a catchy title though.\\
+
+Meteors have three stages to their lives. First, they exist as small rocky or
+metallic bodies floating through space, where they are referred to as
+meteoroids. When, or if, a meteoroid enters the atmosphere of Earth, it becomes
+a meteor. As re-entry occurs, the meteor is heated intensely, owing to friction
+with air molecules. The air around the meteor is also heated, to such an
+extreme temperature that atoms making up the air are ionised, stripping
+electrons away from them. The super-heated trail left by the meteor is what you
+see as a `shooting star'. If the meteor makes it to the ground, it becomes a
+meteorite.
+}
+
+\section{Meteor showers}
+
+\large{
+Typically, meteors are observed as part of `showers'. These are events, lasting
+over a couple of weeks, where there is an increased number of meteoroids in the
+space around Earth, resulting in more meteors, all of which appear to originate
+from a single point in the sky, called the radiant. Meteors that are not part
+of a shower are referred to as `sporadic' meteors.\\
+
+Meteor showers occur throughout the year, and are each attributed to a comet,
+or sometimes an asteroid, which causes the shower. As the comet orbits the Sun,
+a trail of dust is left, producing a meteor `stream'. The Earth moving through
+this stream is what constitutes a meteor shower. When Earth moves through the
+most dense part of the stream, many more meteors are observed. This is known as
+the `peak' of the shower.\\
+
+The names for the showers are derived from the constellation where the radiant
+lies. For example, the Perseids shower's radiant is in Perseus. Each shower
+occurs at roughly the same time each year, since the trail left by the source
+comet doesn't move relative to Earth, meaning it lies at the same point in
+Earth's orbit each year, occurring at the same time. \\
+
+These showers can vary widely. Some may produce lots of fireballs, which are
+meteors that explode under the pressure of re-entry, lighting up the entire
+sky.  Some may only produce very small meteors, since there is only small sized
+debris left by a comet. This variation occurs from the meteor `stream'
+spreading out as the trail orbits the Sun. As well as this, over successive
+years of meteor showers without another orbit of a comet, the larger debris is
+collected by Earth and only smaller debris is left. This can result in peak
+years, when many more meteors are detected, after an orbit of the source comet.
+Conversely, this can also cause the peak of a shower to vary in intensity over
+a number of years.
+}
+
+\section{Radio Meteor Detection}
+
+\large{
+Meteors are most commonly observed visually, however radio meteor detection
+offers an alternative. This method is possible because the ionised,
+super-heated air left as a trail by a meteor is reflective to radio waves. The
+process starts with a transmitting antenna, often a significant distance away
+from those observing the meteors, which emits a radio signal into the
+atmosphere. This signal must ideally spread across a wide area of sky, allowing
+the best chance of detecting a meteor. The signal must also be at a suitable
+angle such that the signal intercepts the meteors where most re-entries occur:
+between 60 and 110 km.\\
+
+When the signal intercepts the meteor trail, it is reflected and the signal can
+then be received by an observer. The part of a received signal that indicates a
+meteor detection is referred to as an `echo'. Often the transmitter will be
+beyond the horizon of the receiver, allowing no direct signal, which is best
+for meteor detection, since the received echo is clearer.\\
+
+What can we do with a meteor echo? There are two main methods: simply counting
+the number of detections an hour, or capturing images of echoes for further
+analysis. Each of these methods depends on a precursor, where the received
+signal is represented as a `waterfall' plot. These are plots that show
+frequency and intensity over time. The frequency shown in the plot is not
+necessarily accurate due to the way the radio signal is received. The
+intensity, in dB, is represented using a colour scale. Meteor echoes have a
+distinctive look in a waterfall plot. \\
+
+Using this waterfall plot, we can complete the two methods. For counting the
+number of detections an hour, we analyse the signal, and declare any peaks
+above a certain intensity threshold a meteor. In order to capture images, we
+generally use a 2D representation of the waterfall plot. \\
+}
+
+\section{Antenna Type}
+
+\large{
+In my analyses, I have used data from the Radio Meteor Observation Bulletin
+organisation, known as RMOB, which provides a database of hourly counts from
+observers around the world. The majority of observers contributing data are 
+amateurs, and have various set-ups. \\
+
+My first analysis focused on the difference in data collected by
+observers with different types of antenna. Overall there are 9 clear antenna
+types, with some miscellaneous types. Overwhelmingly the most popular is the
+Yagi antenna, which you may recognise as what was once the most popular choice
+of TV aerial.\\
+
+My results show that there is little difference between
+detection results collected by observers with very different antennas. This is
+not surprising: if there was a clearly superior antenna, almost all observers
+would use this.  
+}
+
+\section{Spatial Variation}
+
+\large{
+Along a similar vein, how does an observer's location influence their results?
+In order to analyse the spatial variation, we study the change in a number of
+data characteristics in relation to longitude and latitude. The short answer
+is: no. I found that, generally, longitude and latitude do not appear to
+influence the quality or quantity of an observer's data. However, it is
+difficult to make a conclusive summary since there are only 4 or 5 observers at
+some locations. \\
+
+There are some interesting results to note, however. For both longitude and
+latitude analyses, the skew of the data, indicating the shape of the
+distribution, is positive. This makes sense, since there is a lower limit to 
+the counts, 0, but no upper limit. \\
+
+Another clear result is a correlation between longitude and peak hour of
+diurnal shift. What is diurnal shift, you ask?
+}
+
+\section{Diurnal Shift}
+
+\large{
+Diurnal shift, also known as diurnal variation, is a phenomenon exhibiting an
+increase and decrease in meteor detection counts over the course of a day. This
+is a well documented observation, appearing to occur across the globe. Through
+my own research I found no standardised model of what causes diurnal shift,
+though there appears to be an accepted explanation for the event.\\
+
+Based on existing explanations, I made my own model, an extension and more
+mathematical description of that already given, which is based on the idea that
+the overall intercept velocities of sporadic meteors changes due to the Earth's
+orbital velocity. This is better illustrated with a diagram. \\
+
+We must start with the assumptions that sporadic meteors have no preferred
+direction to enter Earth's amtmosphere. We also assume that the number of
+meteors detected is proportional to the intercept velocity of any given meteor.
+Meteors are mostly only detected if they are travelling tangent to Earth's
+atmosphere, which complicates things. However, all of these velocities will
+cancel, leaving an overall incident velocity perpendicular to Earth's surface.
+From the diagram we see that the incident velocity is the addition of a
+component of Earth's orbital velocity, and the meteor's velocity. At sunset,
+the meteor's incident velocity is added to Earth's orbital velocity, giving a
+higher intercept velocity and thus more meteors are detected.\\ 
+
+In order to test my model, I used the RMOB data to analyse the diurnal
+variation of each observer. Considering the form of diurnal shift for different
+locations, we see that the model fits well with the data: plots of diurnal
+shift for observers in Europe, North America, as well as Asia \& Australia all
+produce diurnal variation fitting a sinusoidal curve, as predicted by the
+model. As of yet I have no explanation as to why some locations have a greater
+mean detection count than others. It could be due to detection setups,
+interference from other sources, or simply low samples sizes.\\
+
+The model also predicts that the peak hour will be approximately 6am, though
+only approximately since nature is unfortunately not as well behaved as we'd
+like.  This map shows each observer as a dot, with the colour based on the peak
+hour of their diurnal shift. It is somewhat clear that the peak hour is based
+on their longitude. Correcting for each observer's timezone (based on
+longitude, not {\it actual} timezones), we see that the majority of observers
+have a peak hour of 6am, which agrees with the model.\\
+
+Although rather hard to discern, my results also indicate that the peak hour of
+diurnal shift does not change over time, nor the intensity. However, the
+sinusoidal fit of an observer's diurnal variation appears to be less pronounced
+between 2005 and 2011. This seems a strange result, but all will become clear.
+}
+
+\section{Temporal Variation}
+
+\large{
+In addition to analysing the change in data by location, we can analyse the
+change through time, on three scales: variation since 2000, variation over a
+year, and variation over the course of a month.\\ 
+
+Regarding the month scale, there is no clear change in detection count for any
+observer. There is a very slight increase, but only on the order of 4 or 5
+counts - this is not significant, though the change is clear in each location
+category. Very small increases such as this are most likely caused by a large
+meteor shower occuring on the same day of the month each year, such as the
+Perseids, which peak between the 12th and 14th of August each year.\\
+
+I found that, on the scale of a single year, the detection counts are lower
+from January until May. Beyond and including June, the detection counts are
+larger by around 20. The peak of this increase is in June. Peculiarly this
+variation doesn't appear to apply to the Asia \& Australia category. However,
+there is still an increase of a similar magnitude, simply peaking two months
+earlier.  This increase could be caused by several factors. It could be due to
+the timings of meteor showers, or potentially the position of planets relative
+to Earth. For example, Jupiter often `sweeps' up debris in space, preventing it
+reaching Earth. However, this is unlikely, since the variation is periodic and,
+although the positioning of planets is also periodic, it is with a very
+different frequency. In order to investigate this further, factoring out the
+background number of detection counts would be necessary, as well as analysing
+the change in period of variation over time.\\
+
+To my surprise, I found a significant change in detection counts since 2000.
+Between 2005 and 2011, the detection counts increase up to almost 2 times the
+normal value. Upon further research, I found this was a documented phenomenon.
+Other studies have noted the correlation between the maximum of the detection
+counts and minimum of the solar cycle. This is a reasonable link: when the Sun
+is less active, less solar wind is generated, giving a lower electron density
+in the upper atmosphere of Earth, which itself provides less interference to
+radio signals, allowing a greater number of detections.\\
+
+In addition to this, I have found that the Earth facing towards or away from
+the Sun has no influence on how many meteors are detected. In addition to this,
+the results suggest that the distribution of sporadic meteors is relatively
+uniform in space, giving validity to assumptions made for the diurnal shift
+model.\\
+}
+
+\section{Zenithal Hourly Rate}
+
+\large{
+It is important to have a standard way of measuring the activity of a meteor
+shower, enabling predictions to be made by models of debris streams. This
+measure is called the Zenithal Hourly Rate (ZHR). ZHR indicates how many
+meteors an observer can expect to see in an hour if they can see the entire
+sky, with perfect viewing conditions, and the radiant is directly overhead,
+called the zenith. The formula for calculating the ZHR uses certain correction
+factors to compensate for {\it not} having these conditions. For example, there
+is a correction for the height of the radiant above the horizon, the field of
+view, and the limiting magnitude, which is the dimmest magnitude an object you
+can see.\\
+
+I modified the formula so that it is applicable to radio meteor detection. The
+correction factor for radiant height is inaccurate, indicating that no meteors
+are seen when the radiant is below the horizon, which is not the case. It also
+results in an infinite ZHR when the radiant approaches the horizon. I
+formulated my own correction factor, and have used that instead. In order to
+use the formula for radio meteor detection, other factors must be changed. For
+starters, the field of view correction factor cannot be used since it is not
+known exactly how much of the sky each antenna can see.\\
+
+As well as this, the correction factor for limiting magnitude is invalid. This
+factor uses the idea of population index, which indicates how many times more
+meteors you expect to see with an increase in magnitude of 1. However, this
+assumes that there is an exponential increase up to the visual limiting
+magnitude of 6.5, which is valid, but this cannot possibly be true up to the
+limiting magnitude of a radio antenna which is {\it much} greater. If it {\it
+was} the case, we would expect to see trillions of meteors an hour -- and we
+don't, luckily.\\
+
+Using the formula for radio observation also requires a correction for the
+background detection rate. This is not applicable to visual observation since
+the background detection rate is close enough to 0 to be negligible. However,
+even when there are no active showers, many meteors are detected by radio
+observation. When these correction factors are included, the formula is like
+so.  This comes with the unfortunate assumptions that the transmitting antenna
+can see the entire sky.\\
+
+Despite these assumptions, the results correlate well with records of visual
+maximum ZHRs and expected shower ZHRs. There is a clear offset between the
+results, which would most likely be accounted for by knowing the limiting
+magnitude and field of view of each respective radio observation. The results
+demonstrate that ZHR is an applicable measure of activity through radio
+observation, though there are of course improvements to be made.\\
+}
+
+\section{Root Mean Square Difference Image Analysis}
+
+\large{
+As mentioned at the start of this talk, the main method of radio meteor
+detection is to count the number of meteors detected in an hour. Also mentioned
+is the alternative of recording images of waterfall plots. In an attempt to use
+this as a quantitative measure of meteor flux (a fancy word for flow, i.e. the
+number of meteors coming through Earth's atmosphere), I wrote a program that
+uses Root Mean Square Difference.\\
+
+The idea of using RMS Difference lies in how meteor echoes are represented in
+waterfall plots. Since the most intense signals, indicating meteors, are white
+in colour, which has the largest colour value when represented in an image. RMS
+difference is the square root of the mean of the squared differences between
+corresponding pixels in two images. Effectively, it's a measure of how
+different two images are. By comparing a waterfall plot to a baseline image --
+the choice of baseline is arbitrary -- we gain a value for how different two
+images are.  Considering the change in this value over time indicates the
+change in meteor flux.\\
+
+Using separately recorded hourly counts, from the same observation station
+(which is here, incidentally), we see that the correlation between
+my own results and the detection counts are good. The correlation coefficient
+of these two sets of data is 0.616, indicating a good positive correlation.
+That is, if one increases, the other does so accordingly. This provides a new
+way of analysing meteor detection results, which has no cost on top of
+detection equipment and only requires one program to use. 
+}
+
+\section{Conclusion}
+
+\large{
+To conclude, more data is needed! A more uniform coverage of the globe, and
+more data, would dispel much of the doubt over results with low sample sizes.
+However, saying this, I believe I have found some interesting results, with a
+new method of analysis, a new method of calculating ZHR, an extended model of
+diurnal shift, and results on the variation of meteor characteristics from a
+dataset of almost 350 observers. Of course, more investigation is always
+needed. I hope you can now tell others why meteors rock.  
+}
+
+\end{document}

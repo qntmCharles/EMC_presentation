@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Introduction}{1}{0}{1}
+\beamer@sectionintoc {2}{What is a meteor?}{2}{0}{2}
+\beamer@sectionintoc {3}{Meteor showers}{5}{0}{3}
+\beamer@sectionintoc {4}{Radio meteor detection}{9}{0}{4}
+\beamer@sectionintoc {5}{Antenna variation}{11}{0}{5}
+\beamer@sectionintoc {6}{Spatial variation}{13}{0}{6}
+\beamer@sectionintoc {7}{Diurnal shift}{16}{0}{7}
+\beamer@sectionintoc {8}{Temporal variation}{22}{0}{8}
+\beamer@sectionintoc {9}{Zenithal hourly rate}{26}{0}{9}
+\beamer@sectionintoc {10}{Image analysis}{30}{0}{10}
